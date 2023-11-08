@@ -176,8 +176,9 @@ main {
 /* Media query for mobile responsiveness */
 @media only screen and (max-width: 768px) {
 	.wrapper {
-		    width: 141%;
-    margin-left: 27px;
+		width: 96%;
+    margin-bottom: 33px;
+    margin-left: 26px;
 		padding: 1.5rem 1rem;
 		border-radius: 0.5rem;
 		box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 20px, rgba(0, 0, 0, 0.22) 0px 6px 6px;
@@ -220,7 +221,7 @@ main {
         padding: 0.375rem 0.75rem;
         line-height: 1.5;
         margin-top: -41px;
-        margin-left: 280px;
+        margin-left: 306px;
         margin-bottom: 7px;
     }
 .btn-primary {

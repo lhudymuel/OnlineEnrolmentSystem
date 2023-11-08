@@ -9,6 +9,8 @@
 
      <!-- Bootstrap Core CSS -->
  <link href="<?php echo web_root; ?>css/bootstrap.min.css" rel="stylesheet">
+ <link rel="shortcut icon" href="img/logonbg.png" type="image/x-icon">
+
  
     <!-- Custom Fonts -->
     <link href="<?php echo web_root; ?>font/css/font-awesome.min.css" rel="stylesheet" type="text/css">

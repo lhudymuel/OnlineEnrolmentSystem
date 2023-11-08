@@ -4005,6 +4005,14 @@ textarea.input-group-sm>.input-group-btn>.btn {
     display: block;
     padding: 10px 15px
 }
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .nav>li>a {
+        position: relative;
+    display: block;
+    padding: 11px 2px
+    }
+}
 
 .nav>li>a:hover,
 .nav>li>a:focus {
@@ -5554,8 +5562,8 @@ a.list-group-item:focus {
         border: 1px solid #ddd; /* Add a border for mobile devices */
         -webkit-box-shadow: none; /* Remove the shadow for mobile devices */
         box-shadow: none; /* Remove the shadow for mobile devices */
-        margin-left: 6px;
-        margin-right: -40px;
+        argin-left: 10px;
+        margin-right: -178px;
     }
 }
 
@@ -5808,7 +5816,7 @@ a.list-group-item:focus {
 }
 @media (max-width: 768px) {
     .well {
-        width: 380px;
+        width: 417px;
         padding: 15px;
         margin-bottom: 15px;
     }

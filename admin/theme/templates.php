@@ -6,6 +6,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <title><?php echo $title;?></title>
+<link rel="shortcut icon" href="onlineenrolmentsystem/img/logonbg.png" type="image/x-icon">
 
      <!-- Bootstrap Core CSS -->
 <link href="<?php echo web_root; ?>admin/css/bootstrap.min.css" rel="stylesheet">

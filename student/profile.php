@@ -20,6 +20,13 @@
     width: 100%;
     height:auto;
 }
+@media screen and (max-width: 768px) {
+    #img_profile >  a > img {
+      margin-left: -11px;
+      max-width: 100%; 
+      height: auto;
+    }
+}
 
 
   </style>
