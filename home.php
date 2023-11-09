@@ -3,7 +3,6 @@
         <title>
             Assmnhs Emrollment
         </title>
-
         <link rel="stylesheet" href="css/indexstyle.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/servicestyle.css">
@@ -11,7 +10,7 @@
         <link href="css/modern.css" rel="stylesheet">
        
 
-        <meta name="viewport" content="width =device-width, initial-scale=1.p">
+      
         <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
          <!-- Bootstrap Core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -32,7 +31,7 @@
         <link href="css/ekko-lightbox.css" rel="stylesheet">
 
 <style type="text/css">
-.p {
+.p {  
 
     color: white;
      margin-bottom: 0;
@@ -117,7 +116,7 @@
                   margin-top: -72px;
                   margin-left: -243px;
                   height: 250px;
-                  width: 1305px;
+                  width: 1346px;
                 }
 
                   header.carousel .item > img,
@@ -131,7 +130,7 @@
                   margin-top: 1px;
                   width: 1200px;
                   height: 250px; 
-                  margin-left: 60px;
+                  margin-left: 75px;
                   /*margin-left: 9%;*/
   
                 }
@@ -155,6 +154,27 @@
                     height: 123px;
                     margin-left: 40px;
                   }
+                  }
+                  @media only screen and (min-width: 1920px){
+                    header.carousel {
+                    margin-top: -50px;
+                    width: 1945px;
+                    height: 350px;
+                    margin-left: -345px;
+                   }
+
+                   header.carousel .item > img,
+                   header.carousel .item.active,
+                   header.carousel .carousel-inner {
+                   height: 350px;
+                   }
+
+                   header.carousel .fill > img {
+                    margin-top: 0px;
+                    width: 100%;
+                    height: 350px;
+                    margin-left: 0px;
+                  } 
                   }
                 </style>
 
@@ -216,7 +236,7 @@
   </div>
 
   <!--Features-->
-<section id="feature" class="fading-background">
+<section id="feature" class="fading-background"  >
            
   <div class="title-text" >
 

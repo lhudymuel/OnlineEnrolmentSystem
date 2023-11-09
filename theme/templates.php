@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.1">
 <meta name="description" content="">
 <meta name="author" content="">
 <title><?php echo $title; ?> |Anselmo A. Sandoval Memorial National High School</title>
@@ -91,8 +91,8 @@
   
   width: 380px;
  height: 380px;
- margin-top: 140px;
- margin-left: 440px;
+ margin-top: 100px;
+ margin-left: 496px;
  
 
 }
@@ -100,7 +100,7 @@
   
   width: 70px;
  height: 70px;
- margin-top: -980px;
+ margin-top: -852px;
  margin-left: 1070px;
 
 }
@@ -108,7 +108,7 @@
   
   width: 80px;
  height: 80px;
- margin-top: -1020px;
+ margin-top: -892px;
  margin-left: 1150px;
 
 }
@@ -146,6 +146,39 @@
   text-align: center;
   margin-top: -75px;
 }
+@media only screen and (min-width: 1920px) {
+  .image img{
+  
+ width: 30%;
+ height: 30%;
+ margin-top: 194px;
+ margin-left: 709px;
+  }
+  .image2 img {
+    width: 105px;
+    height: 105px;
+    margin-top: -1337px;
+    margin-left: 1580px;
+  }
+
+  .image3 img {
+   
+    width: 120px;
+    height: 120px;
+    margin-top: -1386px;
+    margin-left: 1700px;
+
+  }
+  .text p{
+  color: white;
+  font-size: 55px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -24px;
+}
+}
+
 
 #banner{
     background: linear-gradient(rgba(20, 20, 20, 0.765),#13121296), url(img/aasmnhs.png);
@@ -301,6 +334,12 @@ $currentyear = date('Y');
     #myElement {
         margin-left: 0px; /* Adjust margin-left for mobile devices */
         width: 414px; /* Adjust width for mobile devices */
+    }
+}
+@media (min-width: 1920px) {
+  #myElement {
+    margin-left: 0%; 
+    width: 100%
     }
 }
 </style>

@@ -1912,6 +1912,20 @@ textarea.form-control {
 .form-group {
     margin-bottom: 15px
 }
+.pv p{
+    text-indent: 0px;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 12px;
+    margin-left: -9px;
+    margin-right: -191px;
+}
+.pv h1{
+  
+    font-size: 39px;
+    margin-left: 35px;
+    margin-right: -153px;
+}
 
 .radio,
 .checkbox {
@@ -5695,7 +5709,7 @@ a.list-group-item:focus {
     color: #333;
     background-color: #f5f5f5;
     border-color: #ddd;
-    width: 1071px;
+    width: 100%;
 }
 /* Media query for mobile devices (max-width: 768px) */
 @media (max-width: 768px) {

@@ -20,8 +20,16 @@
     #feature {
         width: 414px;
         padding: 174px 6px;
-        margin-top: -331px;
+      
     }
+}
+
+@media (min-width: 1920px){
+    #feature{
+        width: 100%;
+        padding: 109px 6px;
+        z-index: -1;
+}
 }
 
 .fading-background {
@@ -57,6 +65,16 @@
     color: black;
     text-shadow: 2px 2px 6px  #098744;
     text-align: center;
+}
+@media (min-width: 1920px){
+    .title-text .hf{
+        font-size: 50px;
+        position: relative;
+        z-index: 2;
+        color: black;
+        text-shadow: 2px 2px 6px  #098744;
+        text-align: center;
+    }
 }
 
 .title-text p{
@@ -121,6 +139,21 @@
     padding: 0 20px;
     text-align: initial;
 }
+@media screen and (min-width: 1920px){
+    .feature-text p{
+        padding: 0 20px;
+        text-align: initial;
+        font-size: 18px;
+    }
+    .features-img img{
+        width:  50%;
+        height: 40%;
+        margin-top: 30px;
+        margin-left: -10px;
+        border-radius: 10px;
+        opacity: 90%;
+    }
+}
 /*FEATURE BOX END*/
 /*MEDIA PC OR PHONE FEATURES*/
 @media screen and (max-width: 770px){
@@ -152,6 +185,7 @@
         background: #efefef;
     }
 }
+
 .service-box{
     width: 80%;
     display: flex;

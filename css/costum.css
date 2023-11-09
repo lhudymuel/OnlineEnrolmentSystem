@@ -88,6 +88,12 @@ footer {
   /*border-color: #098744;*/
  border: 1px solid #098744;
 }
+@media (min-width: 1920px) {
+  .navbar-magbanua {
+    height: 120px;
+    
+  }
+}
 
 .navbar-magbanua .navbar-brand {
   color: #ffffff;
@@ -105,6 +111,14 @@ footer {
 
 .navbar-magbanua .navbar-nav > li > a {
   color: #ffffff;
+}
+@media (min-width: 1920px) {
+  .navbar-magbanua .navbar-nav > li > a {
+    color: #ffffff;
+    margin-top: 14px;
+    font-size: 25px;
+    padding: 27px 4px;
+  }
 }
 
 .navbar-magbanua .navbar-nav > li > a:hover,
@@ -223,6 +237,13 @@ footer {
     color: white; 
      list-style: none;
 
+}
+@media only screen and (min-width: 1920px){
+  .navbar-TOPsm {
+    height: 45px;
+    font-size: 17px;
+
+}
 }
 
 .navbar-TOPsm .navbar-brand {

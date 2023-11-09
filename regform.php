@@ -413,7 +413,7 @@ if($userStud){
 
 					<form action="" enctype="multipart/form-data" method="post">
 		<div class="modal-body">
-			<div class="form-group">
+			<div class="pv">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="row">
