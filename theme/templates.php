@@ -442,9 +442,7 @@ $currentyear = date('Y');
 <!-- end of page  -->
 
 
- <!-- modalorder -->
- <div class="modal fade" id="myOrdered">
- </div>
+ 
 <!-- end -->
  
   <!-- jQuery -->

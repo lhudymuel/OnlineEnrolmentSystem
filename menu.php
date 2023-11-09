@@ -1,4 +1,5 @@
- 
+<link rel="stylesheet" href="css/servicestyle.css">
+  
   <div class="panel-group" id="accordion">
   <ul>
  
@@ -37,5 +38,86 @@ $mydb->setQuery("SELECT * FROM `department`");
 
   
 </div>
+
+
+</section>
+
+
+
+<!--Service -->
+<section id="service">
+<div class="title-text">
+  <p>AASMNHS</p>
+  <h11>STRAND</h11>
+</div>
+<div class="service-box">
+ 
+  <div class="single-service">
+      <img src="img/stem1.jpg">
+      <div class="overlays"></div>
+      <div class="service-desc">
+          <h3>STEM</h3>
+          <hr>
+          <p></p>
+      </div>
+  </div>
+  <div class="single-service">
+      <img src="img/abm.jpg">
+      <div class="overlays"></div>
+      <div class="service-desc">
+          <h3>ABM</h3>
+          <hr>
+          <p></p>
+      </div>
+  </div>
+  <div class="single-service"> 
+       <img src="img/humss.jpg">
+       <div class="overlays"></div>
+       <div class="service-desc">
+          <h3>HUMSS</h3>
+          <hr>
+          <p></p>
+      </div>
+  </div>
+  <div class="single-service"> 
+       <img src="img/ICT.jpeg">
+       <div class="overlays"></div>
+       <div class="service-desc">
+          <h3>ICT</h3>
+          <hr>
+          <p></p>
+      </div>
+  </div>
+  <div class="single-service"> 
+       <img src="img/he2.jpg">
+       <div class="overlays"></div>
+       <div class="service-desc">
+          <h3>H.E.</h3>
+          <hr>
+          <p></p>
+      </div>
+  </div>
+  <div class="single-service"> 
+       <img src="img/smaw3.jpg">
+       <div class="overlays"></div>
+       <div class="service-desc">
+          <h3>SMAW</h3>
+          <hr>
+          <p></p>
+      </div>
+  </div>
+  <div class="single-service"> 
+       <img src="img/eim.jpg">
+       <div class="overlays"></div>
+       <div class="service-desc">
+          <h3>EIM</h3>
+          <hr>
+          <p></p>
+      </div>
+  </div>
+
+</div>
+
+</section>
  
     

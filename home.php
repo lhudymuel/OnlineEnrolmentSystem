@@ -247,40 +247,51 @@
   <div class="feature-box">
  
       <div class="features">
-          <h11>AASMNHS</h11>
+          <h11>Welcome to Our Home</h11>
           <div class="features-desc">
             <div class="feature-icon">
               <i class="fa fa-cutlery" aria-hidden="true"></i>
             </div>
             <div class="feature-text">
-              <p>There have been several claims for the longest sentence in the English language revolving around the longest printed sentence.
-
-                Sentences can be made arbitrarily long in various ways. One method is successive iterations, such as "Someone thinks that someone thinks that someone thinks that someone thinks that...,"[1] or by combining shorter clauses. Sentences can also be extended by recursively embedding clauses one into another, such as 
-                  </p>
+              <p> We are living  in a fast-paced changing world 
+                where education must keep abreast with the trends
+                to offer quality service to its clientelle. We, 
+                at Anselmo A. Sandoval Memorial National High School 
+                value education with our goal to offer the best 
+                service for our teachers, learners, stakeholders 
+                and the entire academe. This website serves as our 
+                gateway to learning and information sharing where 
+                transparency is evident and information searching is 
+                limitless. Come and discover what lies ahead in EsP 
+                world.... Learn and enjoy your journey in the World 
+                of Values Education, not just a hub where everyone belongs!</p>
             </div>
           </div>
-          <h11>AASMNHS</h11>
+          <h11>Vission</h11>
           <div class="features-desc">
             <div class="feature-icon">
               <i class="fa fa-smile-o" aria-hidden="true"></i>
             </div>
             <div class="feature-text">
-              <p>There have been several claims for the longest sentence in the English language revolving around the longest printed sentence.
-
-                Sentences can be made arbitrarily long in various ways. One method is successive iterations, such as "Someone thinks that someone thinks that someone thinks that someone thinks that...,"[1] or by combining shorter clauses. Sentences can also be extended by recursively embedding clauses one into another, such as 
-                  </p>
+              <p> As an educational institution, AASMNHS envisions to 
+                               realize well-rounded individuals, who are God-fearing, 
+                               technologically equipped, and academically intelligent 
+                               learners; thus, gearing to be competent and globally 
+                               competetive citizens of our nation. </p>
             </div>
           </div>
-          <h11>AASMNHS</h11>
+          <h11>Mission</h11>
           <div class="features-desc">
             <div class="feature-icon">
               <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
             </div>
             <div class="feature-text">
-              <p>There have been several claims for the longest sentence in the English language revolving around the longest printed sentence.
-
-                Sentences can be made arbitrarily long in various ways. One method is successive iterations, such as "Someone thinks that someone thinks that someone thinks that someone thinks that...,"[1] or by combining shorter clauses. Sentences can also be extended by recursively embedding clauses one into another, such as
-                  </p>
+              <p> AASMNHS aims to produce wholesome individuals who are 
+                                mentally, socially. morally, and technologically equipped. 
+                                Likewise, productive, competent and skillful learners are 
+                                developed to cope up with the real ities and needs of an 
+                                ever-changing world. It also develops good camaraderie and 
+                                rapport between and among learners.</p>
             </div>
           </div>
       </div>
@@ -292,7 +303,6 @@
 </section>
 <!--Features End-->
 
-<!--Service -->
 <section id="service">
 <div class="title-text">
   <p>DepEd</p>
@@ -300,41 +310,68 @@
 </div>
 <div class="service-box">
   <div class="single-service">
-      <img src="img/ans1.png">
+      <img src="img/aasmnhsnew.jpg">
       <div class="overlays"></div>
       <div class="service-desc">
-          <h3>1</h3>
+          <h3>Anselmo A Sandoval Memorial National High School</h3>
           <hr>
-          <p>There have been several claims for the longest sentence in the English language revolving around the longest printed sentence.</p>
+          <p></p>
+      </div>
+  </div>
+</div>
+
+</section>
+
+<section id="service">
+
+<div class="service-box">
+  <div class="single-service">
+      <img src="img/principal.png">
+      <div class="overlays"></div>
+      <div class="service-desc">
+          <h3>Principal IV</h3>
+          <hr>
+          <p>WILFDREDO M. DAKILA</p>
+      </div>
+  </div>
+</div>
+
+</section>
+
+<!--Service -->
+<section id="service">
+
+<div class="service-box">
+ 
+  <div class="single-service">
+      <img src="img/guidance.jpg">
+      <div class="overlays"></div>
+      <div class="service-desc">
+          <h3>Guidance Coordinator</h3>
+          <hr>
+          <p>MARIFE S. RODRIGUEZ</p>
       </div>
   </div>
   <div class="single-service">
-      <img src="img/ans2.png">
+      <img src="img/espcoor.jpg">
       <div class="overlays"></div>
       <div class="service-desc">
-          <h3>2</h3>
+          <h3>ESP Coordinator</h3>
           <hr>
-          <p>There have been several claims for the longest sentence in the English language revolving around the longest printed sentence.</p>
-      </div>
-  </div>
-  <div class="single-service">
-      <img src="img/ans3.png">
-      <div class="overlays"></div>
-      <div class="service-desc">
-          <h3>3</h3>
-          <hr>
-          <p>There have been several claims for the longest sentence in the English language revolving around the longest printed sentence.</p>
+          <p>LIEZEL O. RIOFLORIDO</p>
       </div>
   </div>
   <div class="single-service"> 
-       <img src="img/ans1.png">
+       <img src="img/shscoor.jpg">
        <div class="overlays"></div>
        <div class="service-desc">
-          <h3>4</h3>
+          <h3>SHS Coordinator</h3>
           <hr>
-          <p>There have been several claims for the longest sentence in the English language revolving around the longest printed sentence.</p>
+          <p>CHRISTIAN B. PULHIN</p>
       </div>
   </div>
+  
+
 </div>
 
 </section>
@@ -345,8 +382,11 @@
   <section id="contact">
     <div class="title-text">
         <p>AASMNHS CONTACT</p>
+        
     </div>
-   
+    <p>Poblacion, Mabini, Batangas		 <i class="fa fa-map-marker"></i></p>
+          <p>aasmnhs_mabini@yahoo.com<i class="fa fa-paper-plane"></i></p>
+          <p>(043) 487-0550	<i class="fa fa-phone"></i></p>
 
   </section>
 <!--Contact end-->
@@ -367,16 +407,14 @@
       </div>
       <div class="footer-right">
           <h11>Contact</h11> 
-          <p>Brgy. Pulong Niogan, Mabini Batangas <i class="fa fa-map-marker"></i></p>
-          <p>https://www.facebook.com/aasmnhs1999official/<i class="fa fa-paper-plane"></i></p>
-          <p>09467554999<i class="fa fa-phone"></i></p>
+          <p>Poblacion, Mabini, Batangas		 <i class="fa fa-map-marker"></i></p>
+          <p>aasmnhs_mabini@yahoo.com<i class="fa fa-paper-plane"></i></p>
+          <p>(043) 487-0550	<i class="fa fa-phone"></i></p>
       </div>
   </div>
   <div class="social-links">
-      <i class="fa fa-facebook"></i>
-      <i class="fa fa-instagram"></i>
-      <i class="fa fa-twitter"></i>
-      <i class="fa fa-youtube-play"></i>
+      <a href="https://www.facebook.com/DepEdTayoAASMNHS301115" class="fa fa-facebook"></a>
+     
       <p>Anselmo A. Sandoval Memorial National High School<br>2023-2024 Enrollment System</p>
   </div>
   

@@ -209,6 +209,7 @@
     z-index: 10000;
     margin-top: -1px;
     margin-bottom: 1px;
+    object-fit: contain;
 }
 .overlays{
     width: 100%;
