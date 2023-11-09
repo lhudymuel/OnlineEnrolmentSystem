@@ -1,5 +1,16 @@
 <?php 
 require_once ("../include/initialize.php");
+
+ if (!isset($_SESSION['IDNO'])){
+      redirect("index.php");
+     }
+
+
+    $student = New Student();
+    $res = $student->single_student($_SESSION['IDNO']);
+
+    $course = New Course();
+    $resCourse = $course->single_course($res->COURSE_ID);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +40,16 @@ require_once ("../include/initialize.php");
 
   <div class="row">
         <div class="col-xs-12">
+            <h1 class="tophead">
+            <img class="logoprt" src="img/logonbg.png">
+            <p class="rep">Republic of the Philippines</p>
+            <p class="titleroo">Anselmo A. Sandoval Memorial National High School</p>
+            <p class="loc">Brgy. Pulong Niogan, Mabini Batangas </p>
+            
+
+</h1>
           <h4 class="page-header">
+
             <i class="fa fa-user"></i> Student Information
             <small class="pull-right">Date: <?php echo date('m/d/Y'); ?></small>
           </h4>
@@ -54,16 +74,23 @@ require_once ("../include/initialize.php");
       ?>
       <table>
         <tr>
-          <td width="75%" colspan="2" >
-            <address>
-            <b>Name : <?php echo $stud->LNAME. ', ' .$stud->FNAME .' ' .$stud->MNAME;?></b><br>
-            Address : <?php echo $stud->HOME_ADD;?><br> 
-            Contact No.: <?php echo $stud->CONTACT_NO;?><br>
-            
+            <td width="75%" colspan="2" >
+                <address>
+                Name :<b>  <?php echo $stud->LNAME. ', ' .$stud->FNAME .' ' .$stud->MNAME;?></b><br>
+                Address : <?php echo $stud->HOME_ADD;?><br> 
+                
           </address>
           </td>
+
+          <address class="neck">
+          <b> <?php echo $_SESSION['SEMESTER']; ?>, <b> <?php echo $_SESSION['SY']; ?> </b><br>
+          <b class="titlereg">REGISTRATION FORM</b>
+          </address>
           <td >
-             <b>Course/Year:  <?php 
+        
+
+
+            Strand:  <b>  <?php 
 
             $course = New Course();
             $singlecourse = $course->single_course($stud->COURSE_ID);
@@ -71,40 +98,30 @@ require_once ("../include/initialize.php");
             $_SESSION['COURSEID'] =$stud->COURSE_ID;
             $_SESSION['COURSELEVEL'] = $stud->YEARLEVEL;
             ?></b><br>
-          <b>Semester : <?php echo $_SESSION['SEMESTER']; ?></b> <br/>
-          <b>Academic Year : <?php echo $_SESSION['SY']; ?></b>
+      
           </td>
         </tr>
       </table>
 
   <div class="row">
-    <h1  align="center">Schedules</h1>
-    <hr/>
-  </div>
-                    <table  class="table table-striped table-bordered table-hover "  style="font-size:12px" cellspacing="0"  > 
-                      <thead>
-                        <tr> 
-                          <th rowspan="2">Subject</th>
-                          <th rowspan="2">Description</th>  
-                          <th rowspan="2">Unit</th>
-                          <th colspan="4">Schedule</th> 
-                        </tr> 
-                        <tr> 
-                          <th>Day</th> 
-                          <th>Time</th>
-                          <th>Room</th> 
-                          <th>Section</th>  
-                          <th>Instructor</th> 
-                        </tr>
-                      </thead>   
-                    <tbody>
-                    <?php
+         <div style="margin-left: 100px;" class=titlesub>
+         <b>SUBJECT</b>
+         
+        </div>
+
+        <div style="margin-left: 580px; margin-top:-20px; position: absolute; " class=titleunit>
+         <b>UNIT(s)</b>
+        </div>
+
+        <div style="margin-left: 50px;" class="subs">
+        <table style="width:70%">
+        <tr>
+            <td width="75%" colspan="2" >
+            
+
+            <?php
                     $tot = 0;
-                    // $sql ="SELECT * 
-                    //       FROM  studentsubjects ss, `subject` sub, `tblschedule` s
-                    //       WHERE  ss.`SUBJ_ID` = sub.`SUBJ_ID` AND sub.`SUBJ_ID` = s.`SUBJ_ID` AND OUTCOME !='Drop'  
-                    //       AND ss.`IDNO`=" .$_SESSION['IDNO']."
-                    //       AND s.sched_semester = '".$_SESSION['SEMESTER']."' AND LEVEL='".$_POST['Course']."'";
+                   
                       $sql ="SELECT * 
                           FROM  tblstudent st, studentsubjects ss, `subject` sub, `tblschedule` s, tblinstructor i
                           WHERE  st.IDNO=ss.IDNO AND ss.`SUBJ_ID` = sub.`SUBJ_ID` AND sub.`SUBJ_ID` = s.`SUBJ_ID`
@@ -114,32 +131,70 @@ require_once ("../include/initialize.php");
 
                       $mydb->setQuery($sql);
                       $cur = $mydb->loadResultList();
+                      
+                      $mydb->setQuery($sql);
+                      $cur = $mydb->loadResultList();
 
                       foreach ($cur as $result) {
                         echo '<tr>'; 
                         echo '<td>'.$result->SUBJ_CODE.'</td>';
-                        echo '<td>'.$result->SUBJ_DESCRIPTION.'</td>';
+                      
                         echo '<td>'.$result->UNIT.'</td>';
-                        echo '<td>'.$result->sched_day  .'</td>';
-                        echo '<td>'.$result->sched_time  .'</td>';
-                        echo '<td>'.$result->sched_room .'</td>';
-                        echo '<td>'.$result->SECTION .'</td>';
-                        echo '<td>'.$result->INST_NAME .'</td>';
+                      
+                        
                       
                         echo '</tr>';
+                        
 
                         $tot += $result->UNIT;
+                        
+
                       }
-                    ?> 
-                    </tbody>
-                      <footer>
+                 
+                      ?> 
+                      
+
+                       <footer style="margin-left: 10px">
+                   
                         <tr>
-                        <td colspan="2" align="right">Total Units</td>
-                          <td colspan="6" ><?php echo $tot; ?></td>
+                        <td colspan="2" align="right"> <hr style="width: 10%;  margin-left: 520px;"> TOTAL<?php echo $tot; ?> </td>
+                          <td colspan="6" > </td>
                         </tr>     
                       </footer>
-                      
-                    </table>
+                    
+        </tr>
+      </table>
+    
+
+        </div>
+            
+          
+  <div class="status">
+    <b>
+    <?php 
+        if (!isset($res->enrollment_status) || empty($res->enrollment_status)) {
+            echo '<span style="color: red;">Not Enrolled</span>';
+        } else {
+            if ($res->enrollment_status == 'Enrolled') {
+                echo '<span style="color: #050332;">' . $res->enrollment_status . '</span>';
+            } else {
+                echo '<span style="color: red;">' . $res->enrollment_status . '</span>';
+            }
+        }
+    ?> 
+
+    </b>
+
+  </div>
+<div class="principal">
+<b>Wilfredo M. Dakila</b>
+</div>
+
+
+  <div class="sign">
+    <hr class="signature">
+<b>Principal</b>
+  </div>
                       
   </body>
 </html>

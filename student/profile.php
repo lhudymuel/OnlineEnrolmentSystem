@@ -91,6 +91,7 @@
      
     <li><a href="#settings" data-toggle="tab">Update Account</a></li>
     <li><a href="#upload" data-toggle="tab">Uploading Requirements</a></li>
+    <li><a href="#cor" data-toggle="tab">View COR</a></li>
   </ul>
               
   <div class="tab-content">
@@ -189,6 +190,12 @@
             <div class="tab-pane" id="upload">
     		 
          <?php require_once  ("upload.php"); ?>
+     
+  
+       </div>
+       <div class="tab-pane" id="cor">
+    		 
+         <?php require_once  ("cor.php"); ?>
      
   
        </div><!--/tab-pane-->

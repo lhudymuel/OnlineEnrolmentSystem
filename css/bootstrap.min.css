@@ -7176,3 +7176,63 @@ td.visible-print {
         display: none !important
     }
 }
+/*!
+PRINT COR
+
+*/
+.tophead .logoprt{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    margin-left: 293px;
+    margin-top: -24px;
+    }
+.tophead .titleroo{
+    font-size: 15px;
+    margin-top: -10px;
+    margin-left: 400px;
+    font-weight: bold;
+}
+.tophead .rep{
+    font-size: 15px;
+    margin-top: 0;
+    margin-left: 495px;
+}
+
+.tophead .loc{
+    font-size: 15px;
+    margin-top: -8px;
+    margin-left: 469px;
+}
+
+.status{
+    margin-left: 100px;
+}
+.status b{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 80px;
+    text-transform: uppercase;
+    color: darkblue;
+}
+.principal{
+    margin-left: 760px;
+    margin-top: -50px;
+    position: absolute;
+}
+
+.sign{
+    position: absolute;
+    margin-left: 800px;
+    margin-top: -50px;
+}
+.signature {
+    width: 228px;
+    border: solid 1px;
+    margin-left: -87px;
+}
+.neck{
+    margin-left: 500px;
+}
+.titlereg{
+    margin-left: -20px;
+}
