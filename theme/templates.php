@@ -181,7 +181,7 @@ img{
 
 
 #banner{
-    background: linear-gradient(rgba(20, 20, 20, 0.765),#13121296), url(img/aasmnhs.png);
+    background:  url(img/banner.png);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -191,19 +191,7 @@ img{
 }
 </style>
 <section id="banner">
-        <div class="image">
-        <img src="img/logoaasmnhspng.png">
-        </div>
-        <div class="image2">
-        <img src="img/deped.png">
-        </div>
-        <div class="image3">
-        <img src="img/logonbg.png">
-        </div>
-       
-        <div class="text">
-     <p>ANSELMO A. SANDOVAL MEMORIAL <br> &emsp;  NATIONAL HIGH SCHOOL</p>
-        </div>
+      
 </section>
 
 <?php 
