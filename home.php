@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/scroll.css">
         <link href="css/modern.css" rel="stylesheet">
        
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
         <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
          <!-- Bootstrap Core CSS -->
@@ -114,9 +114,9 @@
               <style>
                   header.carousel {
                   margin-top: -72px;
-                  margin-left: -243px;
+                  
                   height: 250px;
-                  width: 1346px;
+                  width: 100%;
                 }
 
                   header.carousel .item > img,
@@ -128,54 +128,60 @@
  
                   header.carousel .fill > img {
                   margin-top: 1px;
-                  width: 1200px;
-                  height: 250px; 
-                  margin-left: 75px;
-                  /*margin-left: 9%;*/
+                  width: 100%;
+                  height: 218px; 
+                  object-fit: contain;
+                 
+                 
   
                 }
-                @media only screen and (max-width: 768px) {
-                   header.carousel {
-                    margin-top: -40px;
-                    width: 424px;
-                    height: 100%;
-                    margin-left: -40px;
-                   }
+                @media (min-width: 670px){
+                  header.carousel {
+                  margin-top: -72px;
+                  height: 250px;
+                  width: 100%;
+                }
 
-                   header.carousel .item > img,
-                   header.carousel .item.active,
-                   header.carousel .carousel-inner {
-                   height: 119px;
-                   }
+                  header.carousel .item > img,
+                  header.carousel .item.active  ,
+                  header.carousel .carousel-inner  {
+                  height: 250px; 
 
-                   header.carousel .fill > img {
-                    margin-top: 0px;
-                    width: 80%;
-                    height: 123px;
-                    margin-left: 40px;
-                  }
-                  }
-                  @media only screen and (min-width: 1920px){
-                    header.carousel {
-                    margin-top: -50px;
-                    width: 1945px;
-                    height: 350px;
-                    margin-left: -345px;
-                   }
+                }
+ 
+                  header.carousel .fill > img {
+                  margin-top: 1px;
+                  width: 100%;
+                  height: 218px; 
+                  object-fit: contain;
+                 
+                }
+                }
+                @media (min-width: 1024px){
+                  header.carousel {
+                  margin-top: -20px;
+                  height: 250px;
+                  width: 100%;
+                }
 
-                   header.carousel .item > img,
-                   header.carousel .item.active,
-                   header.carousel .carousel-inner {
-                   height: 350px;
-                   }
+                  header.carousel .item > img,
+                  header.carousel .item.active  ,
+                  header.carousel .carousel-inner  {
+                  height: 250px; 
 
-                   header.carousel .fill > img {
-                    margin-top: 0px;
+                }
+ 
+                  header.carousel .fill > img {
+                    margin-top: -92px;
+                    height: 416px;
                     width: 100%;
-                    height: 350px;
-                    margin-left: 0px;
-                  } 
-                  }
+                  
+                    
+                }
+                }
+             
+               
+                
                 </style>
 
                 <header id="myCarousel" class="carousel slide"  >
@@ -250,7 +256,7 @@
           <h11>Welcome to Our Home</h11>
           <div class="features-desc">
             <div class="feature-icon">
-              <i class="fa fa-cutlery" aria-hidden="true"></i>
+              <i class="" aria-hidden="true"></i>
             </div>
             <div class="feature-text">
               <p> We are living  in a fast-paced changing world 
@@ -270,7 +276,7 @@
           <h11>Vission</h11>
           <div class="features-desc">
             <div class="feature-icon">
-              <i class="fa fa-smile-o" aria-hidden="true"></i>
+              <i class="" aria-hidden="true"></i>
             </div>
             <div class="feature-text">
               <p> As an educational institution, AASMNHS envisions to 
@@ -283,7 +289,7 @@
           <h11>Mission</h11>
           <div class="features-desc">
             <div class="feature-icon">
-              <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+              <i class="" aria-hidden="true"></i>
             </div>
             <div class="feature-text">
               <p> AASMNHS aims to produce wholesome individuals who are 
@@ -384,9 +390,7 @@
         <p>AASMNHS CONTACT</p>
         
     </div>
-    <p>Poblacion, Mabini, Batangas		 <i class="fa fa-map-marker"></i></p>
-          <p>aasmnhs_mabini@yahoo.com<i class="fa fa-paper-plane"></i></p>
-          <p>(043) 487-0550	<i class="fa fa-phone"></i></p>
+   
 
   </section>
 <!--Contact end-->
@@ -395,9 +399,8 @@
 <section id="footer">
   <img src="img/logonbg.png" class="footer-img">
   <div class="title-text">
-      <p style="color: black; font-size: 4vh;">Anselmo A. Sandoval Memorial National High School Enrollment System</p>
+      <p style="color: black ;">Anselmo A. Sandoval Memorial National High School Enrollment System</p>
       
-  
   </div>
   <div class="footer-row">
       <div class="footer-left">
@@ -426,9 +429,7 @@
 
 
 
-        
-
-<footer class="panel-footer" style=" margin-left: -15px;
+        <footer class="panel-footer" style=" width: 100%;
 margin-right: 1px;
 background-color:#098744;color:#fff;">
             <p align="left" style="margin-left: 20px;" >&copy; Anselmo A. Sandoval Memorial National High School</p>
