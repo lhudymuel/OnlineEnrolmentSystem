@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 08, 2023 at 03:21 AM
+-- Generation Time: Nov 10, 2023 at 03:24 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -694,7 +694,7 @@ CREATE TABLE `tblauto` (
 INSERT INTO `tblauto` (`ID`, `autocode`, `autoname`, `appendchar`, `autostart`, `autoend`, `incrementvalue`) VALUES
 (1, 'Asset', 'Asset', 'ASitem', 0, 3, 1),
 (2, 'Trans', 'Transaction', 'TrAnS', 1, 5, 1),
-(3, 'SIDNO', 'IDNO', '2015', 1000000, 3, 1),
+(3, 'SIDNO', 'IDNO', '2015', 1000000, 6, 1),
 (4, 'EMPLOYEE', 'EMPID', '020010', 0, 2, 1);
 
 -- --------------------------------------------------------
@@ -745,10 +745,13 @@ INSERT INTO `tbllogs` (`LOGID`, `USERID`, `LOGDATETIME`, `LOGROLE`, `LOGMODE`) V
 (6, 1, '2023-11-04 06:38:03', 'Administrator', 'Logged in'),
 (7, 1, '2023-11-04 06:41:47', 'Administrator', 'Logged out'),
 (8, 1, '2023-11-04 06:41:54', 'Registrar', 'Logged in'),
-(9, 3, '2023-11-07 07:41:43', 'Administrator', 'Logged in'),
-(10, 3, '2023-11-07 07:46:17', 'Administrator', 'Logged in'),
-(11, 10000003, '2023-11-07 07:48:07', 'Student', 'Logged out'),
-(12, 1000000204, '2023-11-07 17:10:59', 'Student', 'Logged out');
+(9, 10000002, '2023-11-09 12:53:06', 'Student', 'Logged out'),
+(10, 10000004, '2023-11-09 17:43:54', 'Student', 'Logged out'),
+(11, 1, '2023-11-10 09:11:23', 'Registrar', 'Logged in'),
+(12, 1, '2023-11-10 09:12:49', 'Registrar', 'Logged out'),
+(13, 1, '2023-11-10 09:12:56', 'Administrator', 'Logged in'),
+(14, 10000003, '2023-11-10 15:20:14', 'Student', 'Logged out'),
+(15, 10000005, '2023-11-10 15:22:32', 'Student', 'Logged out');
 
 -- --------------------------------------------------------
 
@@ -841,7 +844,9 @@ INSERT INTO `tblstuddetails` (`DETAIL_ID`, `GUARDIAN`, `GUARDIAN_ADDRESS`, `GCON
 (137, 'Lucio Abe', '', '0988456745', 10000001),
 (138, 'Lucio Abe', '', '09875745634', 10000002),
 (139, 'Lucio Abe', '', '0978578345', 10000003),
-(140, 'Lucio Abe', '', '09877857354', 10000002);
+(140, 'Lucio Abe', '', '09877857354', 10000002),
+(141, 'Lucio Abe', '', '09873654234', 10000004),
+(142, 'Lucio Abe', '', '0987584535', 10000005);
 
 -- --------------------------------------------------------
 
@@ -884,7 +889,9 @@ CREATE TABLE `tblstudent` (
 
 INSERT INTO `tblstudent` (`S_ID`, `IDNO`, `FNAME`, `LNAME`, `MNAME`, `SEX`, `BDAY`, `BPLACE`, `STATUS`, `AGE`, `NATIONALITY`, `RELIGION`, `CONTACT_NO`, `HOME_ADD`, `ACC_USERNAME`, `ACC_PASSWORD`, `student_status`, `YEARLEVEL`, `STUDSECTION`, `COURSE_ID`, `STUDPHOTO`, `SEMESTER`, `SYEAR`, `NewEnrollees`, `file`, `enrollment_status`) VALUES
 (1, 10000003, 'Angelikajane', 'Lugar', 'B', 'Female', '2002-12-03', 'Lemery Batangas', 'Single', 0, 'Filipino', 'Return to Christ', '0988753453', 'Gasang Mabini Batangas', 'angelika@gmail.com', '74f24313647efabbaba42462a0fa8b42abc1fd2a', 'New', 1, 1, 1, 'student_image/6596074.png', 'First', '', 0, '', 'Enrolled'),
-(2, 10000002, 'Lhudymuel', 'Abe', 'I', 'Male', '2002-08-26', 'Calapan Mindoro City', 'Single', 0, 'Filipino', 'Catholic', '0988753845', 'Gasang Mabini Batangas', 'lhudymuel@gmail.com', '74f24313647efabbaba42462a0fa8b42abc1fd2a', 'New', 1, 0, 1, 'student_image/6596074.png', 'First', '', 1, 'student_files/CANVA_proof_II-AYubbn4Jswvp (1).pdf', '');
+(2, 10000002, 'Lhudymuel', 'Abe', 'I', 'Male', '2002-08-26', 'Calapan Mindoro City', 'Single', 0, 'Filipino', 'Catholic', '0988753845', 'Gasang Mabini Batangas', 'lhudymuel@gmail.com', '74f24313647efabbaba42462a0fa8b42abc1fd2a', 'New', 1, 0, 1, 'student_image/6596074.png', 'First', '', 1, '', ''),
+(3, 10000004, 'Alexandra', 'Rodero', 'B', 'Female', '2002-08-26', 'Calapan Mindoro City', 'Single', 0, 'Filipino', 'Catholic', '09878273423', 'Gasang Mabini Batangas', 'alex@gmail.com', '74f24313647efabbaba42462a0fa8b42abc1fd2a', 'New', 1, 0, 1, '', 'First', '', 1, '', ''),
+(4, 10000005, 'Erica Grace', 'Mistica', 'B', 'Female', '2002-08-26', 'Lemery Batangas', 'Single', 0, 'Filipino', 'Catholic', '0987834534', 'Gasang Mabini Batangas', 'erica@gmail.com', '74f24313647efabbaba42462a0fa8b42abc1fd2a', 'New', 1, 0, 1, '', 'First', '', 1, '', '');
 
 -- --------------------------------------------------------
 
@@ -907,8 +914,7 @@ CREATE TABLE `useraccounts` (
 --
 
 INSERT INTO `useraccounts` (`ACCOUNT_ID`, `ACCOUNT_NAME`, `ACCOUNT_USERNAME`, `ACCOUNT_PASSWORD`, `ACCOUNT_TYPE`, `EMPID`, `USERIMAGE`) VALUES
-(1, 'AASMNHS ADMIN/REGISTRAR', 'AASMNHS RE', 'd033e22ae348aeb5660fc2140aec35850c4da997', 'Registrar', 1234, 'photos/logonbg.png'),
-(3, 'AASMNHS', 'AASMNHS', 'd033e22ae348aeb5660fc2140aec35850c4da997', 'Administrator', 1234, 'photos/LoginRed.jpg');
+(1, 'AASMNHS REGISTRAR/ ADMIN', 'AASMNHS ', 'd033e22ae348aeb5660fc2140aec35850c4da997', 'Administrator', 1234, 'photos/logonbg.png');
 
 --
 -- Indexes for dumped tables
@@ -1087,7 +1093,7 @@ ALTER TABLE `tblinstructor`
 -- AUTO_INCREMENT for table `tbllogs`
 --
 ALTER TABLE `tbllogs`
-  MODIFY `LOGID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `LOGID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `tblpayment`
@@ -1111,19 +1117,19 @@ ALTER TABLE `tblsemester`
 -- AUTO_INCREMENT for table `tblstuddetails`
 --
 ALTER TABLE `tblstuddetails`
-  MODIFY `DETAIL_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=141;
+  MODIFY `DETAIL_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=143;
 
 --
 -- AUTO_INCREMENT for table `tblstudent`
 --
 ALTER TABLE `tblstudent`
-  MODIFY `S_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `S_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `useraccounts`
 --
 ALTER TABLE `useraccounts`
-  MODIFY `ACCOUNT_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ACCOUNT_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

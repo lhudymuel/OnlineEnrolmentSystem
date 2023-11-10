@@ -69,6 +69,20 @@ main {
 	align-items: center;
 	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
+@media (min-width: 1024px){
+  .wrapper {
+	width: 40rem;
+  margin-left: 550px;
+	padding: 2.1rem 2rem;
+	border-radius: 0.7rem;
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+	justify-items: center;
+	align-items: center;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+}
 .wrapper .heading h1 {
 	font-weight: 700;
 	font-size: 2rem;
@@ -176,11 +190,11 @@ main {
 /* Media query for mobile responsiveness */
 @media only screen and (max-width: 768px) {
 	.wrapper {
-		width: 96%;
+		width: 93%;
     margin-bottom: 33px;
-    margin-left: 26px;
-		padding: 1.5rem 1rem;
-		border-radius: 0.5rem;
+    margin-left: 9px;
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
 		box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 20px, rgba(0, 0, 0, 0.22) 0px 6px 6px;
 	}
 
@@ -199,6 +213,7 @@ main {
 	.form-group p {
 		font-size: 14px;
 		margin-bottom: 0.2rem;
+    margin-left: -192px;
 	}
 
 	.form-group > input {
@@ -221,7 +236,7 @@ main {
         padding: 0.375rem 0.75rem;
         line-height: 1.5;
         margin-top: -41px;
-        margin-left: 306px;
+        margin-left: 246px;;
         margin-bottom: 7px;
     }
 .btn-primary {

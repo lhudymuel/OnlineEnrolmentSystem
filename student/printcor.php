@@ -157,7 +157,7 @@ require_once ("../include/initialize.php");
                        <footer style="margin-left: 10px">
                    
                         <tr>
-                        <td colspan="2" align="right"> <hr style="width: 10%;  margin-left: 520px;"> TOTAL<?php echo $tot; ?> </td>
+                        <td colspan="2" align="right"> <hr style="width: 10%;  margin-left: 500px;"> TOTAL<?php echo $tot; ?> </td>
                           <td colspan="6" > </td>
                         </tr>     
                       </footer>

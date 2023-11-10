@@ -80,7 +80,7 @@
 }
 
 .menu  li {
-  left: 60px;
+  left: 35px;
   width: 230px;
   padding: 0 3px 0 3px;
   text-align: center;
@@ -188,6 +188,37 @@ img{
     height: 100vh;
     margin-top: -50px;
     
+}
+
+@media  (max-width: 670px){
+    #banner{   
+        background:  url(img/pbanner.png);
+        background-size: cover;
+        background-position: top center;
+        position: relative;
+        height: 100vh;
+        margin-top: -50px;  
+    }
+}
+@media  (min-width: 670px){
+    #banner{   
+        background:  url(img/tbanner.png);
+        background-size: cover;
+        background-position: top center;
+        position: relative;
+        height: 100vh;
+        margin-top: -50px;  
+    }
+}
+@media  (min-width: 1024px){
+    #banner{   
+        background:  url(img/banner.png);
+        background-size: cover;
+        background-position: top center;
+        position: relative;
+        height: 100vh;
+        margin-top: -50px;  
+    }
 }
 </style>
 <section id="banner">
