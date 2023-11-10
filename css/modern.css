@@ -34,8 +34,8 @@ header.carousel .carousel-inner  {
 header.carousel .fill > img {
     width: 740px;
     height: 180px; 
-    /*margin-left: 9%;*/
-  
+    margin-left: 0%;
+    z-index: 10;  
 }
 
 /* 404 Page Styles */
