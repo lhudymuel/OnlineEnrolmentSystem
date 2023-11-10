@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
 <title><?php echo $title; ?> |Anselmo A. Sandoval Memorial National High School</title>
@@ -86,58 +86,59 @@
   text-align: center;
  
 }
-
-.image img{
-  
-  width: 380px;
- height: 380px;
- margin-top: 100px;
- margin-left: 496px;
- 
-
+img{
+  max-width: 100%;  
 }
+@media (max-width: 670px){
+    .image img{
+        margin-left: 65px;
+        margin-top: 178px;
+        width: 61vw;
+        height: 40%;
+    }
+}
+@media (min-width: 670px){
+    
+    .image img{
+    margin-left: 222px;
+    margin-top: 80px;
+    width: 44vw;
+    height: 0%;
+    }
+}
+@media (min-width: 1024px){
+    .image img{
+        margin-left: 470px;
+        margin-top: 25px;
+        width: 34vw;
+        height: 40%;
+    }
+}
+
+    @media (min-width: 670px) {
+      .image  img{
+        width: 30vw;
+      }
+    }
+  
 .image2 img{
   
-  width: 70px;
- height: 70px;
- margin-top: -852px;
- margin-left: 1070px;
-
+    margin-left: 198px;
+    margin-top: -713px;
+    width: 53px;
+    display: none;
+    height: 53px;
 }
 .image3 img{
   
-  width: 80px;
- height: 80px;
- margin-top: -892px;
- margin-left: 1150px;
-
+  width: 60px;
+  height: 60px;
+  margin-left: 254px;
+  display: none;
+  margin-top: -756px;
 }
-/* Media queries for responsiveness */
-@media only screen and (max-width: 768px) {
- 
-    .col-md-10 {
-        width: 60%;
-    }
-    .col-md-offset-1 {
-        margin-left: 0;
-    }
-  
 
-  .image2 img {
-    width: 53px;
-    height: 53px;
-    margin-top: -830px;
-    margin-left: 283px;
-  }
 
-  .image3 img {
-    width: 60px;
-    height: 60px;
-    margin-top: -871px;
-    margin-left: 338px;
-  }
- 
-}
 .text p{
   color: white;
   font-size: 40px;
@@ -146,36 +147,35 @@
   text-align: center;
   margin-top: -75px;
 }
-@media only screen and (min-width: 1920px) {
-  .image img{
-  
- width: 30%;
- height: 30%;
- margin-top: 194px;
- margin-left: 709px;
-  }
-  .image2 img {
-    width: 105px;
-    height: 105px;
-    margin-top: -1337px;
-    margin-left: 1580px;
-  }
-
-  .image3 img {
-   
-    width: 120px;
-    height: 120px;
-    margin-top: -1386px;
-    margin-left: 1700px;
-
-  }
+@media (max-width: 670px){
   .text p{
-  color: white;
-  font-size: 55px;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: bold;
-  text-align: center;
-  margin-top: -24px;
+    color: white;
+    font-size: 17px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -5px;
+}
+}
+@media (min-width: 670px){
+  .text p{
+    color: white;
+    font-size: 24px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -5px;
+}
+
+}
+@media (min-width: 670px){
+  .text p{
+    color: white;
+    font-size: 30px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -5px;
 }
 }
 
@@ -189,35 +189,6 @@
     margin-top: -50px;
     
 }
-@media (max-width: 768px) {
-    #banner {
-      background: linear-gradient(rgba(20, 20, 20, 0.765),#13121296), url(img/aasmnhs.png);
-    background-size: cover;
-    background-position: top center;
-    position: relative;
-    height: 100vh;
-    width: 414px;
-    }
-}
-
-
-@media screen and (max-width: 768px){
-  
-    .image img{
-        margin-left: 20px;
-       width: 90%;
-       height: 50%;
-    }
-    .text p{
-  color: white;
-  font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: bold;
-  text-align: center;
-  margin-top: -55px;
-}
-}
-
 </style>
 <section id="banner">
         <div class="image">
@@ -229,6 +200,7 @@
         <div class="image3">
         <img src="img/logonbg.png">
         </div>
+       
         <div class="text">
      <p>ANSELMO A. SANDOVAL MEMORIAL <br> &emsp;  NATIONAL HIGH SCHOOL</p>
         </div>
@@ -330,18 +302,7 @@ $currentyear = date('Y');
     margin-left: 0%; 
     width: 100%
     }
-  @media (max-width: 768px) {
-    #myElement {
-        margin-left: 0px; /* Adjust margin-left for mobile devices */
-        width: 414px; /* Adjust width for mobile devices */
-    }
-}
-@media (min-width: 1920px) {
-  #myElement {
-    margin-left: 0%; 
-    width: 100%
-    }
-}
+ 
 </style>
  <div class="navbar navbar-static-top navbar-magbanua col-md-10    col-md-offset-1 "    role="navigation"  id="myElement" style=""> 
     

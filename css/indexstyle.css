@@ -9,7 +9,7 @@
 /*HEAD START*/
 .header-bar{
     position: fixed;
-    width: 111.33333333333334%;
+    width: 100%;
     height: 20px;
     background-color: #098744;
     border: 1px solid #098744;
@@ -31,67 +31,63 @@ h1{
     background-size: cover;
     background-position: top center;
     position: relative;
+    width: 100%;
     height: 650px;
+    object-fit: contain;
     margin-top: -50px;
     
 }
-@media (min-width: 1920px){
-    #banner {
+@media (max-width: 670px){
+    #banner{
         background: linear-gradient(rgba(20, 20, 20, 0.765),#13121296), url(../img/aasmnhs.png);
         background-size: cover;
         background-position: top center;
         position: relative;
         width: 100%;
-        height: 1060px;
+        height: 462px;
+        object-fit: contain;
         margin-top: -50px;
-    }
+        
+    }  
 }
-@media (max-width: 768px) {
-    #banner {
-        background: linear-gradient(rgba(20, 20, 20, 0.765),#13121296), url(../img/aasmnhs.png);
-        background-size: cover;
-        background-position: top center;
-        position: relative;
-        width: 414px;
-        height: 669px;
-        margin-top: -50px;
-    }
-}
+
 img{
- width: 350px;
- height: 350px;
- margin-top: 180px;
- margin-left: 470px;
+ width: 100%;
+ height: 100%;
+ margin-top: 80px;
+ margin-left: 480px;
 }
 
 header2{
    
    background:#098744;
    box-shadow: 0 5px 10px rgba(0, 0, 0, .1) ;
-   padding: 15px 645px;
    display: flex; 
-   margin-left: -231px ;
    z-index: 1000;
    border: black;
+   width: 100%;
    height: 50px;
    border-radius: 1px;
    width: 100%;
-   border: 23px solid #098744;
+   border: 1px solid #098744;
 }
-/* Media Query for Mobile Devices */
-@media (max-width: 768px) {
-    header2 {
-        padding: 15px 187px;
-        margin-left: -31px;
-        width: 415px;
-    }
- }
- @media (min-width: 1920px){
+@media (min-width: 1024px){
     header2{
-        margin-left: -323px;
-        width: 1925px;
-    }
- }
+   
+        background:#098744;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .1) ;
+        display: flex; 
+        z-index: 1000;
+        border: black;
+        margin-top: 1px;
+        width: 100%;
+        height: 50px;
+        border-radius: 1px;
+        width: 100%;
+        border: 1px solid #098744;
+     } 
+}
+
 
  
  
@@ -103,16 +99,47 @@ header2{
 .navbar ul li{
   align-items: center;
    float: left;
-   margin-left: 90px;
+  
    border: 1px solid #098744;
    padding: -3px;
 }
+
 .navbar ul li a{
     font-size: 14px;
     padding: 16px;
     color: white;
     display: block;
 }
+@media (max-width: 670px){
+    .navbar ul li a{
+        font-size: 14px;
+        padding: 16px;
+        margin-left: 10px;
+        color: white;
+        display: block;
+    }
+}
+@media (min-width: 670px){
+    .navbar ul li a{
+        font-size: 14px;
+        padding: 12px 3px;
+        margin-left: 65px;
+        color: white;
+        display: block;
+    }
+}
+@media (min-width: 1024px){
+    .navbar ul li a{
+        font-size: 14px;
+        padding: 8px 0px 8px;
+        margin-left: 174px;
+        margin-right: -121px;
+        
+        color: white;
+        display: block;
+    }
+}
+
 .navbar ul li a:hover{
     
     background: #4bb45b;
@@ -151,23 +178,7 @@ header2{
     background: #efefef;
     position: relative;
   }
-  @media (max-width: 768px) {
-    #footer {
-        padding: 60px 0 20px; /* Adjust the padding for mobile devices */
-    width: 414px;
-    }
-}
-@media (min-width: 1920px){
-    #footer{
-        font-size: 25px;
-    }
-    .social-links p{
-        font-size: 21px;
-        margin-top: 20px;
-    }
-    
-    
-}
+
 
   
   .footer-row{
@@ -189,7 +200,14 @@ header2{
     margin: 10px 0;
 
   }
-
+    @media  (max-width: 670px){
+        .footer-right{
+            flex-basis: 45%;
+            padding: 10px;
+            margin-bottom: 20px;
+    }
+}
+    
 .footer-row p{
   line-height: 35px;
 
@@ -200,8 +218,10 @@ header2{
     color: black ;
     margin: 10px;
 }
+
 .footer-img{
-    max-width: 370px;
+    max-width: 100%;
+    object-fit: contain;
     opacity: 0.3;
     position: absolute;
     margin-left: 1px;
@@ -234,12 +254,4 @@ header2{
     font-size: 12px;
     margin-top: 20px;
 }
-@media (min-width: 1920px){
-    
-    .social-links p{
-        font-size: 21px;
-        margin-top: 20px;
-    }
-    
-    
-}
+
