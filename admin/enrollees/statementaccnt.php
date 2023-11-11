@@ -38,12 +38,93 @@ require_once("../../include/initialize.php");
  
  <link href="<?php echo web_root; ?>admin/css/costum.css" rel="stylesheet">
 </head>
+
+
+<style>
+  
+/*!
+PRINT COR
+
+*/
+.tophead .logoprt{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    margin-left: 93px;
+    margin-top: -24px;
+    }
+    .tophead .logodep{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    margin-left: 590px;
+    margin-top: -24px;
+    }
+.tophead .titleroo{
+    font-size: 15px;
+    margin-top: -10px;
+    margin-left: 200px;
+    font-weight: bold;
+}
+.tophead .rep{
+    font-size: 15px;
+    margin-top: 0;
+    margin-left: 295px;
+}
+
+.tophead .loc{
+    font-size: 15px;
+    margin-top: -8px;
+    margin-left: 269px;
+}
+
+.status{
+    margin-left: 100px;
+}
+.status b{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 80px;
+    text-transform: uppercase;
+    color: darkblue;
+}
+.principal{
+    margin-left: 760px;
+    margin-top: -50px;
+    position: absolute;
+}
+
+.sign{
+    position: absolute;
+    margin-left: 800px;
+    margin-top: -50px;
+}
+.signature {
+    width: 228px;
+    border: solid 1px;
+    margin-left: -87px;
+}
+.neck{
+    margin-left: 500px;
+}
+.titlereg{
+    margin-left: -20px;
+}
+</style>
+
 <body onload="window.print();">
 <div class="wrapper"> 
     <section class="invoice">
       <!-- title row -->
       <div class="row">
-        <h3 align="center">Enrollment Fee's</h3>
+      <h1 class="tophead">
+            <img class="logoprt" src="img/logonbg.png">
+            <img class="logodep" src="img/deped.png" >
+            <p class="rep">Republic of the Philippines</p>
+            <p class="titleroo">Anselmo A. Sandoval Memorial National High School</p>
+            <p class="loc">Brgy. Pulong Niogan, Mabini Batangas </p>
+            
+
+    </h1>
       </div>
       <div class="row">
         <div class="col-xs-12">
@@ -182,61 +263,7 @@ require_once("../../include/initialize.php");
 <?php
 }
 ?>
-   <div class="row">
-        <!-- accepted payments column -->
-        <div class="col-xs-6">
-          <p class="lead">Tuition:</p>
-        <p class="lead">
-
-          <?php
-
-           $subtot = '';
-           $perunit = 209;
-           $entrancefee = 5693;
-           $totsem = 0;
-
-           $subtot = $totunit * $perunit;
-           $totsem = $entrancefee + $subtot;
-           echo $totunit .' x  &#8369 ' . $perunit . ' =  &#8369 ' . $subtot ; 
-
-
-           $_SESSION['SUBTOT'] = $subtot;
-           $_SESSION['ENTRANCEFEE'] = $entrancefee;
-           $_SESSION['TOTSEM'] = $totsem;
-           $_SESSION['TOTUNIT'] = $totunit;
-           ?> 
-          </p>
-          
-
-          <p class="text-muted well well-sm no-shadow" style="margin-top: 10px;">
-           Description : This is the formula of amount per unit and its total.
-          </p>
-        </div>
-        <!-- /.col -->
-        <div class="col-xs-6"> 
-         <br/>
-         <br/> 
-            <table class="table">
-              <tr>
-                <th style="width:50%">Tuition Fees:</th>
-                <td>  &#8369 <?php echo  $subtot; ?></td>
-              </tr>
-              <tr>
-                <th>Miscellaneous Fee</th>
-                <td>  &#8369 <?php echo  $entrancefee  ; ?></td>
-              </tr> 
-              <tr>
-                <th>Total Semester:</th>
-                <td>  &#8369 <?php echo  $totsem; ?>
-                <input type="hidden" id="totsem" name="totsem" value="<?php echo  $totsem; ?>">
-                </td>
-              </tr>
-               
-            </table>
-          </div> 
-        <!-- /.col -->
-      </div>
-      <!-- /.row --> 
+   
     </section> 
     </div>
  </body>

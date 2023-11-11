@@ -42,6 +42,7 @@ require_once ("../include/initialize.php");
         <div class="col-xs-12">
             <h1 class="tophead">
             <img class="logoprt" src="img/logonbg.png">
+            <img class="logodep" src="img/deped.png">
             <p class="rep">Republic of the Philippines</p>
             <p class="titleroo">Anselmo A. Sandoval Memorial National High School</p>
             <p class="loc">Brgy. Pulong Niogan, Mabini Batangas </p>
@@ -109,7 +110,7 @@ require_once ("../include/initialize.php");
          
         </div>
 
-        <div style="margin-left: 580px; margin-top:-20px; position: absolute; " class=titleunit>
+        <div style="margin-left: 480px; margin-top:-20px; position: absolute; " class=titleunit>
          <b>UNIT(s)</b>
         </div>
 
@@ -157,7 +158,7 @@ require_once ("../include/initialize.php");
                        <footer style="margin-left: 10px">
                    
                         <tr>
-                        <td colspan="2" align="right"> <hr style="width: 10%;  margin-left: 500px;"> TOTAL<?php echo $tot; ?> </td>
+                        <td colspan="2" align="right"> <hr style="width: 10%;  margin-left: 430px;"> TOTAL<?php echo $tot; ?> </td>
                           <td colspan="6" > </td>
                         </tr>     
                       </footer>

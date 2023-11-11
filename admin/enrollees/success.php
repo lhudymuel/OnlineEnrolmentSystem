@@ -16,6 +16,9 @@ $_SESSION['SY'] = $sy;
      $studres = $student->single_student($_GET['IDNO'])
      
 ?>
+
+ 
+
 <form action="index.php?q=payment" method="POST">
 <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper container">
@@ -25,6 +28,7 @@ $_SESSION['SY'] = $sy;
       <!-- title row -->
       <div class="row">
         <div class="col-xs-12">
+        
           <h3 class="page-header">
             <i class="fa fa-user"></i> Student Information
             <small class="pull-right">Date: <?php echo date('m/d/Y'); ?></small>
@@ -165,87 +169,7 @@ $_SESSION['SY'] = $sy;
 <?php
 }
 ?>
-   <div class="row">
-        <!-- accepted payments column -->
-        <div class="col-xs-6">
-          <p class="lead">Tuition:</p>
-        <p class="lead">
-
-          <?php
-
-           $subtot = '';
-           $perunit = 209;
-           $entrancefee = 5693;
-           $totsem = 0;
-
-           $subtot = $totunit * $perunit;
-           $totsem = $entrancefee + $subtot;
-           echo$totunit .' x ' . ' &#8369 ' . $perunit . ' =  &#8369 ' . $subtot ; 
-
-
-           $_SESSION['SUBTOT'] = $subtot;
-           $_SESSION['ENTRANCEFEE'] = $entrancefee;
-           $_SESSION['TOTSEM'] = $totsem;
-           $_SESSION['TOTUNIT'] = $totunit;
-           ?> 
-          </p>
-          
-
-          <p class="text-muted well well-sm no-shadow" style="margin-top: 10px;">
-           Description : This is the formula of amount per unit and its total.
-          </p>
-        </div>
-        <!-- /.col -->
-        <div class="col-xs-6">
-          <!-- <p class="lead">Amount Due 2/22/2014</p> -->
-
-         <br/>
-         <br/>
-          <div class="table-responsive">
-            <table class="table">
-              <tr>
-                <th style="width:50%">Tuition Fees:</th>
-                <td>  &#8369 <?php echo  $subtot; ?></td>
-              </tr>
-              <tr>
-                <th>Miscellaneous Fee</th>
-                <td> &#8369 <?php echo  $entrancefee  ; ?></td>
-              </tr>
-              <!-- <tr>
-                <th>Shipping:</th>
-                <td>$5.80</td>
-              </tr> -->
-              <tr>
-                <th>Total Semester:</th>
-                <td> &#8369 <?php echo  $totsem; ?>
-                <input type="hidden" id="totsem" name="totsem" value="<?php echo  $totsem; ?>">
-                </td>
-              </tr>
-              <?php
-              $student = New Student();
-              $result = $student->single_student($_GET['IDNO']);
-
-              if ($result->student_status=='Regular' || $result->student_status=='Irregular') { 
-              ?>
-              <tr>
-                <th>Partial Payment:</th>
-                <td><input type="text" id="PartialPayment" autocompete="false" name="PartialPayment" required="true"></td>
-              </tr>
-              <tr>
-                <th>Balance:</th>
-                <td> &#8369 <span id="Balance">0.00</span>
-                <input type="hidden" id="txtBalance" name="txtBalance" value="">
-                </td>
-              </tr>
-              <?php
-                }
-              ?>
-            </table>
-          </div>
-        </div>
-        <!-- /.col -->
-      </div>
-      <!-- /.row -->
+  
 
       <!-- this row will not appear when printing -->
       <div class="row no-print">

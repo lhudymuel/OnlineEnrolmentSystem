@@ -7187,25 +7187,32 @@ PRINT COR
     height: 100px;
     width: 100px;
     position: absolute;
-    margin-left: 293px;
+    margin-left:193px;
     margin-top: -24px;
     }
+.tophead .logodep{
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        margin-left: 670px;
+        margin-top: -24px;
+        }
 .tophead .titleroo{
     font-size: 15px;
     margin-top: -10px;
-    margin-left: 400px;
+    margin-left: 300px;
     font-weight: bold;
 }
 .tophead .rep{
     font-size: 15px;
     margin-top: 0;
-    margin-left: 495px;
+    margin-left: 395px;
 }
 
 .tophead .loc{
     font-size: 15px;
     margin-top: -8px;
-    margin-left: 469px;
+    margin-left: 369px;
 }
 
 .status{
