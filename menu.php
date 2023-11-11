@@ -53,66 +53,66 @@ $mydb->setQuery("SELECT * FROM `department`");
 <div class="service-box">
  
   <div class="single-service">
-      <img src="img/stem1.jpg">
+      <img src="img/stem.png">
       <div class="overlays"></div>
       <div class="service-desc">
           <h3>STEM</h3>
           <hr>
-          <p></p>
+          <p>Science Technology Engineering Mathematics</p>
       </div>
   </div>
   <div class="single-service">
-      <img src="img/abm.jpg">
+      <img src="img/abm.png">
       <div class="overlays"></div>
       <div class="service-desc">
           <h3>ABM</h3>
           <hr>
-          <p></p>
+          <p>Accounting Business Management</p>
       </div>
   </div>
   <div class="single-service"> 
-       <img src="img/humss.jpg">
+       <img src="img/humss.png">
        <div class="overlays"></div>
        <div class="service-desc">
           <h3>HUMSS</h3>
           <hr>
-          <p></p>
+          <p>Humanities and Social Sciences</p>
       </div>
   </div>
   <div class="single-service"> 
-       <img src="img/ICT.jpeg">
+       <img src="img/ict.png">
        <div class="overlays"></div>
        <div class="service-desc">
           <h3>ICT</h3>
           <hr>
-          <p></p>
+          <p>Information Communication and Technology</p>
       </div>
   </div>
   <div class="single-service"> 
-       <img src="img/he2.jpg">
+       <img src="img/he.png">
        <div class="overlays"></div>
        <div class="service-desc">
           <h3>H.E.</h3>
           <hr>
-          <p></p>
+          <p>Home Economics</p>
       </div>
   </div>
   <div class="single-service"> 
-       <img src="img/smaw3.jpg">
+       <img src="img/smaw.png">
        <div class="overlays"></div>
        <div class="service-desc">
           <h3>SMAW</h3>
           <hr>
-          <p></p>
+          <p>Shielded metal arc welding </p>
       </div>
   </div>
   <div class="single-service"> 
-       <img src="img/eim.jpg">
+       <img src="img/eim.png">
        <div class="overlays"></div>
        <div class="service-desc">
           <h3>EIM</h3>
           <hr>
-          <p></p>
+          <p>Electrical Installation and Maintenance</p>
       </div>
   </div>
 
