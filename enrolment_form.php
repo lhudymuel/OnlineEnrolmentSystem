@@ -32,9 +32,9 @@ if($q=='enrol'){
   }else{
   ?>
 <ul class="nav nav-tabs" id="myTab">
-    <li class="active"><a href="#New" data-toggle="tab">New</a></li> 
-    <li><a href="#Old" data-toggle="tab">Old</a></li>
-    <li><a href="#Transferees" data-toggle="tab">Transferees</a></li>
+    <li class="active"><a href="#New" data-toggle="tab">Enroll Here</a></li> 
+    <li><a href="#Old" data-toggle="tab">Login Here</a></li>
+    
   </ul>
   <div class="tab-content"><br/>
     <div class="tab-pane active" id="New">

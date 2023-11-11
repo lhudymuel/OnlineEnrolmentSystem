@@ -417,7 +417,7 @@ if($userStud){
 				<div class="row">
 					<div class="col-md-12">
 						<div class="row">
-							<div class="col-md-8" ">
+							<div class="col-md-8" >
 							<p>This Privacy Agreement is made effective between Anselmo A. 
 								Sandoval Memorial National High School Enrollment System, located at Brgy. 
 								Pulong Niogan, Mabini Batangas, and the Users.</p>
