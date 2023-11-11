@@ -4,7 +4,7 @@
      }
 
 ?>
-
+ <link rel="shortcut icon" href="img/logonbg.png" type="image/x-icon">
 <div class="row">
       <div class="col-lg-12">
        	 <div class="col-lg-6">

@@ -8,7 +8,7 @@
 <div class="row">
       <div class="col-lg-12">
        	 <div class="col-lg-8">
-            <h2 class="page-header">List of Subjects per Course/Year <a href="index.php?view=add" class="btn btn-primary btn-xs  ">  <i class="fa fa-plus-circle fw-fa"></i> New</a>  </h2>
+            <h2 class="page-header">List of Subjects per Strand/Year <a href="index.php?view=add" class="btn btn-primary btn-xs  ">  <i class="fa fa-plus-circle fw-fa"></i> New</a>  </h2>
        		</div>
        		<div class="col-lg-4" >
 			   <img style="float:right; width:140px; height: 140px;" src="<?php echo web_root; ?>img/logonbg.png" >

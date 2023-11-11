@@ -17,7 +17,7 @@ $_SESSION['SY'] = $sy;
      
 ?>
 
- 
+<link rel="shortcut icon" href="img/logonbg.png" type="image/x-icon">
 
 <form action="index.php?q=payment" method="POST">
 <!-- Content Wrapper. Contains page content -->

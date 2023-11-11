@@ -9,7 +9,7 @@
     $resCourse = $course->single_course($res->COURSE_ID);
 
    ?>
-    
+     <link rel="shortcut icon" href="img/logonbg.png" type="image/x-icon">
   <style type="text/css">
   #img_profile{
     width: 100%;
